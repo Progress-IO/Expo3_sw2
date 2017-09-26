@@ -96,14 +96,16 @@ Standup App
         </li>
         <li class="dropdown user user-menu">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <img alt="User Image" class="user-image" src="http://placehold.it/160x160" />
-          <span class="hidden-xs">Alexander Pierce</span>
+            <!--<img alt="User Image" class="user-image" src="http://placehold.it/160x160" />-->
+            <%= image_tag("profile.png", :class => "user-image", :alt => "User Image") %>
+          <span class="hidden-xs">Simon's cat</span>
           </a>
           <ul class="dropdown-menu">
             <li class="user-header">
-              <img class="img-circle" alt="User Image" src="http://placehold.it/160x160"> </img>
+              <!--<img class="img-circle" alt="User Image" src="http://placehold.it/160x160"> </img>-->
+              <%= image_tag("profile.png", :class => "img-circle", :alt => "User Image") %>
               <p>
-                Alexander Pierce - Web Developer
+                Simon's cat - Web Developer
                 <small>Member since Nov. 2012</small>
               </p>
             </li>

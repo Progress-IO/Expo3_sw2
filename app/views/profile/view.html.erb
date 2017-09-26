@@ -1,2 +1,9 @@
-<h1>Profile#view</h1>
+<h1>Mi perfil</h1>
 <p>Find me in app/views/profile/view.html.erb</p>
+
+<p>This page was created in
+    <%=  distance_of_time_in_words(Time.now, Time.now + 15.seconds)%>
+</p>
+<h2>
+<%= button_to "Edit profile", profile_path, action: :edit, method: :get %>
+</h2>
